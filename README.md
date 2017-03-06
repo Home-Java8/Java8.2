@@ -43,3 +43,11 @@
 
 ###Nashorn
 ( 9.0 Движок Nashorn JavaScript )
+
+#Top 10 фич Java 8
+
+[bazhenov.me/blog/2014/07/20/java-8-top10.html](http://bazhenov.me/blog/2014/07/20/java-8-top10.html)
+
+![TLAB-1](TLAB-1.png)
+![TLAB-2](TLAB-2.png)
+![hot-threads](hot-threads.png)
