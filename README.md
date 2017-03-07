@@ -1,5 +1,10 @@
 
 #Новые особенности в языке Java 8
+* default_methods
+* optional
+* [Лямбда-выражение](src/com/news/lambda/README.md)
+* [Stream API](src/com/news/stream_api/README.md)
+
 [часть 1](http://info.javarush.ru/translation/2014/10/09/Особенности-Java-8-максимальное-руководство-часть-1-.html) **|** [часть 2](http://info.javarush.ru/translation/2014/10/09/Особенности-Java-8-максимальное-руководство-часть-2-.html)  **(** Ответы: [часть 1](https://jsehelper.blogspot.com/2016/05/java-8-1.html) **|** [часть 2](https://jsehelper.blogspot.com/2016/05/java-8-2.html) **)**
 > Главным улучшением в Java 8 является добавление поддержки функциональных программных конструкций к его объектно-ориентированной основе.
 
