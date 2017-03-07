@@ -8,6 +8,12 @@ public class Source0 {
 
     public static void main(String[] args) {
         /*
+         * 0. Пример использования лямбд для реализации отложенного вызова:
+         */
+        Runnable run = () -> System.out.println("\n-------------------------\nПример использования лямбд для реализации отложенного вызова!\n-------------------------");
+        new Thread(run).start();
+
+        /*
          * 1. обычный интерфейс:
          */
         MyFace my = new MyClas();
