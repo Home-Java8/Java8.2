@@ -125,3 +125,11 @@ Exception in thread "main" java.lang.IllegalStateException: stream has already b
 >
 > *Размер основного пула потоков использует до 5-и нитей — в зависимости от количества доступных физических ядер процессора*:
 
+```java
+    ForkJoinPool commonPool = ForkJoinPool.commonPool();
+    System.out.println(commonPool.getParallelism());    // 3
+```
+
+На моей машине общий пул инициализируется с параллелизмом 3 по-умолчанию. Это значение может быть уменьшено или увеличено путем установки следующих параметров JVM:
+
+    -Djava.util.concurrent.ForkJoinPool.common.parallelism=5
