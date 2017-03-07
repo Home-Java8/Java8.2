@@ -11,8 +11,9 @@
 — примитивные потоки (IntStream, LongStream и DoubleStream + IntFunction, IntPredicate)
 — и объектные потоки (Stream)
 
----
-| № |    ass                                                 |     asas                                | Пример |
+###asdsd
+
+| № |                                                        |                                         | Пример |
 | -- | ------------------------------------------------------ | --------------------------------------- | ------ |
 | 1  | collection.stream()                                    | из коллекции                            |        |
 | 2  | collection.parallelStream()                            | параллельного стрима (из коллекции)     |        |
