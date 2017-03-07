@@ -1,4 +1,4 @@
-package com.lambda0;
+package com.news.lambda;
 
 /**
  * Created by alexandr on 19.05.15.

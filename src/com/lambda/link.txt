@@ -1,6 +1,0 @@
-
-http://www.golovachcourses.com/java-8-stream-api/
-http://developer.alexanderklimov.ru/android/java/io.php
-http://kostin.ws/java/java-input-stream.html
-http://habrahabr.ru/post/178405/
-http://habrahabr.ru/post/188850/
