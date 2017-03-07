@@ -80,6 +80,41 @@
 | .`findAny`().orElse(0);                                       | Возвращает любой подходящий элемент из стрима                               |        |
 
 
+###Повторное использование Потоков (Streams)
+
+> (Потоки в Java 8 не могут быть использованы повторно)
+> Как только вызываете какую-нибудь *терминальную* операцию - поток закрывается.
+
+```java
+    Stream<String> stream = Stream.of("dd2", "aa2", "bb1", "bb3", "cc")
+                                .filter(s -> s.startsWith("a"));
+
+    stream.anyMatch(s -> true);    // операция выполнится успешно
+    stream.noneMatch(s -> true);   // Вылетит Exception
+```
+
+Вызов noneMatch после anyMatch в одном и том же stream вызовет следующее исключение:
+
+```java
+Exception in thread "main" java.lang.IllegalStateException: stream has already been operated upon or closed
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:229)
+	at java.util.stream.ReferencePipeline.noneMatch(ReferencePipeline.java:459)
+```
+
+
+Чтобы избежать этого, мы должны создать новую цепь для каждой *терминальной* операции:
+
+```java
+    Supplier<Stream<String>> streamSupplier = () -> Stream.of("dd2", "aa2", "bb1", "bb3", "cc")
+                                                        .filter(s -> s.startsWith("a"));
+
+    streamSupplier.get().anyMatch(s -> true);   // операция пройдет успешно
+    streamSupplier.get().noneMatch(s -> true);  // здесь также все будет ok
+```
+
+    Каждый вызов конструктора get() создает новый поток, с которым мы можем безопасно работать.
+
+
 ###Порядок обработки
 
 последовательный (sequential)
