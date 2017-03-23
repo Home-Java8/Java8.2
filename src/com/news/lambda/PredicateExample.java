@@ -1,8 +1,5 @@
 package com.news.lambda;
 
-/**
- * Created by alexandr on 19.05.15.
- */
 import org.junit.Test;
 
 import java.util.Objects;
@@ -10,6 +7,7 @@ import java.util.function.Predicate;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
+
 
 /**
  * This java example will demonstrate common
