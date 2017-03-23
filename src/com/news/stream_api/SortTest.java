@@ -2,7 +2,13 @@ package com.news.stream_api;
 
 
 /**
- * @see http://microfork.com/whats-new-in-java-8/
+ * @see http://javapitstop.com/article/fighting-with-nullpointerexception-6/
+ *      http://microfork.com/whats-new-in-java-8/
+ *      https://habrahabr.ru/post/225641/
+ *
+ * http://javahero.ru/java-8-пример-фильтрации-с-помощью-потоков/
+ * https://dou.ua/lenta/articles/oracle-certified-java-8/
+ *
  *
  * Проблелмы которые могут быть при работе с цыклами:
  * *************************************************
