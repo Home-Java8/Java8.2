@@ -73,7 +73,6 @@ for (int a1=0; a1<arr2.length; ++a1){
             arr2[a1] = arr2[a2];
             arr2[a2] = t;
         }
-        //System.out.print("*");
     }
 }
 ```
